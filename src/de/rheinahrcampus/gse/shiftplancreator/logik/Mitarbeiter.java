@@ -11,93 +11,106 @@ import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.EinsehenSchi
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.ErstellenSchichtplanBerechtigung;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.FestlegenZeitspanneBerechtigung;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.GenehmigenSchichtplanBerechtigung;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.VeroeffentlichenSchichtplanBerechtigung;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnlegenMitarbeiterVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnzeigenLassenGesamtansichtVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationenVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BearbeitenMitarbeiterVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BereitstellenSchichtplanVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationenVerweigert;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.ErstellenSchichtplanVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.FestlegenZeitspanneVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.GenehmigenSchichtplanVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.VeroeffentlichenSchichtplanVerweigert;
 
 public class Mitarbeiter {
 	
 	private String nachname;
 	private String vorname;
-	private Arbeitspensum arbeitspensum;
-	private Beruf beruf;
 	private String benutzername;
 	private String passwort;
+	private Arbeitspensum arbeitspensum;
+	private Beruf beruf;
 	
 	private ErstellenSchichtplanBerechtigung erstellenSchichtplanBerechtigung;
 	private BereitstellenSchichtplanBerechtigung bereitstellenSchichtplanBerechtigung;
-//	private VeroeffentlichenSchichtplanBerechtigung veroeffentlichenSchichtplanBerechtigung;
+	private VeroeffentlichenSchichtplanBerechtigung veroeffentlichenSchichtplanBerechtigung;
 	private FestlegenZeitspanneBerechtigung festlegenZeitspanneBerechtigung;
 	private AnlegenMitarbeiterBerechtigung anlegenMitarbeiterBerechtigung;
 	private BearbeitenMitarbeiterBerechtigung bearbeitenMitarbeiterBerechtigung;
 	private EinsehenSchichtplaeneStationBerechtigung einsehenSchichtplaeneStationBerechtigung;
-	private AusdruckenSchichtplaeneStationBerechtigung AusdruckenSchichtplaeneStationBerechtigung;
+	private AusdruckenSchichtplaeneStationBerechtigung ausdruckenSchichtplaeneStationBerechtigung;
 	private EinsehenSchichtplaeneStationenBerechtigung einsehenSchichtplaeneStationenBerechtigung;
-	private AusdruckenSchichtplaeneStationenBerechtigung AusdruckenSchichtplaeneStationenBerechtigung;
+	private AusdruckenSchichtplaeneStationenBerechtigung ausdruckenSchichtplaeneStationenBerechtigung;
 	private GenehmigenSchichtplanBerechtigung genehmigenSchichtplanBerechtigung;
 	private AnzeigenLassenGesamtansichtBerechtigung anzeigenLassenGesamtansichtBerechtigung;
 	
-	public Mitarbeiter(String nachname, String vorname, Beruf beruf, String passwort) {
-		this.vorname = vorname;
-		this.nachname = nachname;
-		this.beruf = beruf;
-		this.passwort = passwort;
-		this.arbeitspensum = Arbeitspensum.HUNDERT;
-		if (nachname.length() > 5) {
-			this.benutzername = vorname.toLowerCase().substring(0, 1) + nachname.toLowerCase().substring(0, 6);
-		} else {
-			this.benutzername = vorname.toLowerCase().substring(0, 1) + nachname.toLowerCase();
-		}
+	public void setStandartBerechtigungen() {
+		erstellenSchichtplanBerechtigung = new ErstellenSchichtplanVerweigert();
+		bereitstellenSchichtplanBerechtigung = new BereitstellenSchichtplanVerweigert();
+		veroeffentlichenSchichtplanBerechtigung = new VeroeffentlichenSchichtplanVerweigert();
+		festlegenZeitspanneBerechtigung = new FestlegenZeitspanneVerweigert();
+		anlegenMitarbeiterBerechtigung = new AnlegenMitarbeiterVerweigert();
+		bearbeitenMitarbeiterBerechtigung = new BearbeitenMitarbeiterVerweigert();
+		einsehenSchichtplaeneStationBerechtigung = new EinsehenSchichtplaeneStationVerweigert();
+		ausdruckenSchichtplaeneStationBerechtigung = new AusdruckenSchichtplaeneStationVerweigert();
+		einsehenSchichtplaeneStationenBerechtigung = new EinsehenSchichtplaeneStationenVerweigert();
+		ausdruckenSchichtplaeneStationenBerechtigung = new AusdruckenSchichtplaeneStationenVerweigert();
+		genehmigenSchichtplanBerechtigung = new GenehmigenSchichtplanVerweigert();
+		anzeigenLassenGesamtansichtBerechtigung = new AnzeigenLassenGesamtansichtVerweigert();
 		
-		setStandardBerechtigungen();
-	}
-	
-	private void setStandardBerechtigungen(){
-		this.erstellenSchichtplanBerechtigung = new ErstellenSchichtplanVerweigert();
-	}
-	
-	public Mitarbeiter(String nachname, String vorname, Beruf beruf, String passwort, Arbeitspensum arbeitspensum) {
-		this(nachname, vorname, beruf, passwort);
-		this.arbeitspensum = arbeitspensum;
+		//if ...
 	}
 	
 	public String getNachname() {
 		return nachname;
 	}
-
+	
 	public void setNachname(String nachname) {
 		this.nachname = nachname;
 	}
-
+	
 	public String getVorname() {
 		return vorname;
 	}
-
+	
 	public void setVorname(String vorname) {
 		this.vorname = vorname;
+	}
+	
+	public String getBenutzername() {
+		return benutzername;
+	}
+	
+	public void setBenutzername(String benutzername) {
+		this.benutzername = benutzername;
+	}
+	
+	public String getPasswort() {
+		return passwort;
+	}
+	
+	public void setPasswort(String passwort) {
+		this.passwort = passwort;
 	}
 	
 	public Arbeitspensum getArbeitspensum() {
 		return arbeitspensum;
 	}
-
+	
 	public void setArbeitspensum(Arbeitspensum arbeitspensum) {
 		this.arbeitspensum = arbeitspensum;
 	}
-
+	
 	public Beruf getBeruf() {
 		return beruf;
 	}
-
+	
 	public void setBeruf(Beruf beruf) {
 		this.beruf = beruf;
 	}
-
-//	public Passwort getPasswort() {
-//		return passwort;
-//	}
-//
-//	public void setPasswort(Passwort passwort) {
-//		this.passwort = passwort;
-//	}
 
 	public ErstellenSchichtplanBerechtigung getErstellenSchichtplanBerechtigung() {
 		return erstellenSchichtplanBerechtigung;
@@ -116,14 +129,14 @@ public class Mitarbeiter {
 		this.bereitstellenSchichtplanBerechtigung = bereitstellenSchichtplanBerechtigung;
 	}
 
-//	public VeroeffentlichenSchichtplanBerechtigung getVeroeffentlichenSchichtplanBerechtigung() {
-//		return veroeffentlichenSchichtplanBerechtigung;
-//	}
-//
-//	public void setVeroeffentlichenSchichtplanBerechtigung(
-//			VeroeffentlichenSchichtplanBerechtigung veroeffentlichenSchichtplanBerechtigung) {
-//		this.veroeffentlichenSchichtplanBerechtigung = veroeffentlichenSchichtplanBerechtigung;
-//	}
+	public VeroeffentlichenSchichtplanBerechtigung getVeroeffentlichenSchichtplanBerechtigung() {
+		return veroeffentlichenSchichtplanBerechtigung;
+	}
+
+	public void setVeroeffentlichenSchichtplanBerechtigung(
+			VeroeffentlichenSchichtplanBerechtigung veroeffentlichenSchichtplanBerechtigung) {
+		this.veroeffentlichenSchichtplanBerechtigung = veroeffentlichenSchichtplanBerechtigung;
+	}
 
 	public FestlegenZeitspanneBerechtigung getFestlegenZeitspanneBerechtigung() {
 		return festlegenZeitspanneBerechtigung;
@@ -159,12 +172,12 @@ public class Mitarbeiter {
 	}
 
 	public AusdruckenSchichtplaeneStationBerechtigung getAusdruckenSchichtplaeneStationBerechtigung() {
-		return AusdruckenSchichtplaeneStationBerechtigung;
+		return ausdruckenSchichtplaeneStationBerechtigung;
 	}
 
 	public void setAusdruckenSchichtplaeneStationBerechtigung(
 			AusdruckenSchichtplaeneStationBerechtigung ausdruckenSchichtplaeneStationBerechtigung) {
-		AusdruckenSchichtplaeneStationBerechtigung = ausdruckenSchichtplaeneStationBerechtigung;
+		this.ausdruckenSchichtplaeneStationBerechtigung = ausdruckenSchichtplaeneStationBerechtigung;
 	}
 
 	public EinsehenSchichtplaeneStationenBerechtigung getEinsehenSchichtplaeneStationenBerechtigung() {
@@ -177,12 +190,12 @@ public class Mitarbeiter {
 	}
 
 	public AusdruckenSchichtplaeneStationenBerechtigung getAusdruckenSchichtplaeneStationenBerechtigung() {
-		return AusdruckenSchichtplaeneStationenBerechtigung;
+		return ausdruckenSchichtplaeneStationenBerechtigung;
 	}
 
 	public void setAusdruckenSchichtplaeneStationenBerechtigung(
 			AusdruckenSchichtplaeneStationenBerechtigung ausdruckenSchichtplaeneStationenBerechtigung) {
-		AusdruckenSchichtplaeneStationenBerechtigung = ausdruckenSchichtplaeneStationenBerechtigung;
+		this.ausdruckenSchichtplaeneStationenBerechtigung = ausdruckenSchichtplaeneStationenBerechtigung;
 	}
 
 	public GenehmigenSchichtplanBerechtigung getGenehmigenSchichtplanBerechtigung() {
@@ -201,9 +214,5 @@ public class Mitarbeiter {
 			AnzeigenLassenGesamtansichtBerechtigung anzeigenLassenGesamtansichtBerechtigung) {
 		this.anzeigenLassenGesamtansichtBerechtigung = anzeigenLassenGesamtansichtBerechtigung;
 	}
-
-	public void setPasswort(String pw) {
-		this.passwort = pw;
-	}
-
+	
 }

@@ -4,7 +4,7 @@ import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.GenehmigenSc
 import de.rheinahrcampus.gse.shiftplancreator.logik.Schichtplan;
 import de.rheinahrcampus.gse.shiftplancreator.logik.SchichtplanStatus;
 
-public class GenehemigenSchichtplan implements GenehmigenSchichtplanBerechtigung {
+public class GenehmigenSchichtplan implements GenehmigenSchichtplanBerechtigung {
 
 	@Override
 	public boolean istBerechtigt() {
