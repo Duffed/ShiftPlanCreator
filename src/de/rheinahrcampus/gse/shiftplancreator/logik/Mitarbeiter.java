@@ -12,17 +12,29 @@ import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.ErstellenSch
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.FestlegenZeitspanneBerechtigung;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.GenehmigenSchichtplanBerechtigung;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.VeroeffentlichenSchichtplanBerechtigung;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnlegenMitarbeiter;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnlegenMitarbeiterVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnzeigenLassenGesamtansicht;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnzeigenLassenGesamtansichtVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStation;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationen;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationenVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BearbeitenMitarbeiter;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BearbeitenMitarbeiterVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BereitstellenSchichtplan;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BereitstellenSchichtplanVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStation;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationen;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationenVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.ErstellenSchichtplan;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.ErstellenSchichtplanVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.FestlegenZeitspanne;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.FestlegenZeitspanneVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.GenehmigenSchichtplan;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.GenehmigenSchichtplanVerweigert;
+import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.VeroeffentlichenSchichtplan;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.VeroeffentlichenSchichtplanVerweigert;
 
 public class Mitarbeiter {
@@ -47,6 +59,13 @@ public class Mitarbeiter {
 	private GenehmigenSchichtplanBerechtigung genehmigenSchichtplanBerechtigung;
 	private AnzeigenLassenGesamtansichtBerechtigung anzeigenLassenGesamtansichtBerechtigung;
 	
+	public Mitarbeiter(String nachname, String vorname, Beruf beruf) {
+		this.nachname = nachname;
+		this.vorname = vorname;
+		this.beruf = beruf;
+		
+	}
+	
 	public void setStandartBerechtigungen() {
 		erstellenSchichtplanBerechtigung = new ErstellenSchichtplanVerweigert();
 		bereitstellenSchichtplanBerechtigung = new BereitstellenSchichtplanVerweigert();
@@ -60,8 +79,22 @@ public class Mitarbeiter {
 		ausdruckenSchichtplaeneStationenBerechtigung = new AusdruckenSchichtplaeneStationenVerweigert();
 		genehmigenSchichtplanBerechtigung = new GenehmigenSchichtplanVerweigert();
 		anzeigenLassenGesamtansichtBerechtigung = new AnzeigenLassenGesamtansichtVerweigert();
-		
-		//if ...
+		if (beruf == Beruf.PFLEGEDIENSTLEITUNG) {
+			einsehenSchichtplaeneStationenBerechtigung = new EinsehenSchichtplaeneStationen();
+			ausdruckenSchichtplaeneStationenBerechtigung = new AusdruckenSchichtplaeneStationen();
+			genehmigenSchichtplanBerechtigung = new GenehmigenSchichtplan();
+			anzeigenLassenGesamtansichtBerechtigung = new AnzeigenLassenGesamtansicht();
+		}
+		if (beruf == Beruf.STATIONSLEITUNG) {
+			erstellenSchichtplanBerechtigung = new ErstellenSchichtplan();
+			bereitstellenSchichtplanBerechtigung = new BereitstellenSchichtplan();
+			veroeffentlichenSchichtplanBerechtigung = new VeroeffentlichenSchichtplan();
+			festlegenZeitspanneBerechtigung = new FestlegenZeitspanne();
+			anlegenMitarbeiterBerechtigung = new AnlegenMitarbeiter();
+			bearbeitenMitarbeiterBerechtigung = new BearbeitenMitarbeiter();
+			einsehenSchichtplaeneStationBerechtigung = new EinsehenSchichtplaeneStation();
+			ausdruckenSchichtplaeneStationBerechtigung = new AusdruckenSchichtplaeneStation();
+		}
 	}
 	
 	public String getNachname() {
