@@ -39,6 +39,8 @@ import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.Veroeffentlic
 
 public class Mitarbeiter {
 	
+	// Attribute:
+	
 	private String nachname;
 	private String vorname;
 	private String benutzername;
