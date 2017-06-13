@@ -46,6 +46,8 @@ public class Mitarbeiter {
 	private Arbeitspensum arbeitspensum;
 	private Beruf beruf;
 	
+	//Attribute:
+	
 	private ErstellenSchichtplanBerechtigung erstellenSchichtplanBerechtigung;
 	private BereitstellenSchichtplanBerechtigung bereitstellenSchichtplanBerechtigung;
 	private VeroeffentlichenSchichtplanBerechtigung veroeffentlichenSchichtplanBerechtigung;
