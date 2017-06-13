@@ -1,9 +1,7 @@
 package de.rheinahrcampus.gse.shiftplancreator.datenbank;
 
 public class UngueltigerLoginException extends Exception {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1171988072902365973L;
 
 	public UngueltigerLoginException() {
