@@ -7,7 +7,8 @@ public enum Beruf {
 	EXAMINIERTE_PFLEGEKRAFT("EPK", "Examinierte Pflegekraft"), 
 	PFLEGEKRAFT("PK", "Pflegekraft"), 
 	PFLEGEHELFER("PH", "Pflegehelfer"), 
-	PFLEGESCHUELER("PS", "Pflegeschueler");
+	PFLEGESCHUELER("PS", "Pflegeschueler"),
+	SEKETARIAT("S", "Sekretariat");
 
 	private String kuerzel;
 	private String name;
