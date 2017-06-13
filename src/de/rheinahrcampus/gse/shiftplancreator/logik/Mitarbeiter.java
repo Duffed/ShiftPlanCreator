@@ -64,6 +64,9 @@ public class Mitarbeiter {
 		this.vorname = vorname;
 		this.beruf = beruf;
 		this.passwort = passwort;
+		this.arbeitspensum = Arbeitspensum.HUNDERT;
+		
+		setStandartBerechtigungen();
 	}
 	
 	public Mitarbeiter(String nachname, String vorname, Beruf beruf, String passwort, Arbeitspensum arbeitspensum) {
@@ -84,12 +87,14 @@ public class Mitarbeiter {
 		ausdruckenSchichtplaeneStationenBerechtigung = new AusdruckenSchichtplaeneStationenVerweigert();
 		genehmigenSchichtplanBerechtigung = new GenehmigenSchichtplanVerweigert();
 		anzeigenLassenGesamtansichtBerechtigung = new AnzeigenLassenGesamtansichtVerweigert();
+		
 		if (beruf == Beruf.PFLEGEDIENSTLEITUNG) {
 			einsehenSchichtplaeneStationenBerechtigung = new EinsehenSchichtplaeneStationen();
 			ausdruckenSchichtplaeneStationenBerechtigung = new AusdruckenSchichtplaeneStationen();
 			genehmigenSchichtplanBerechtigung = new GenehmigenSchichtplan();
 			anzeigenLassenGesamtansichtBerechtigung = new AnzeigenLassenGesamtansicht();
 		}
+		
 		if (beruf == Beruf.STATIONSLEITUNG) {
 			erstellenSchichtplanBerechtigung = new ErstellenSchichtplan();
 			bereitstellenSchichtplanBerechtigung = new BereitstellenSchichtplan();
