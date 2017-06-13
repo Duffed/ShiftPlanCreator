@@ -46,8 +46,6 @@ public class Mitarbeiter {
 	private Arbeitspensum arbeitspensum;
 	private Beruf beruf;
 	
-	//Attribute:
-	
 	private ErstellenSchichtplanBerechtigung erstellenSchichtplanBerechtigung;
 	private BereitstellenSchichtplanBerechtigung bereitstellenSchichtplanBerechtigung;
 	private VeroeffentlichenSchichtplanBerechtigung veroeffentlichenSchichtplanBerechtigung;
@@ -108,6 +106,8 @@ public class Mitarbeiter {
 			ausdruckenSchichtplaeneStationBerechtigung = new AusdruckenSchichtplaeneStation();
 		}
 	}
+	
+	//Getters und Setters:
 	
 	public String getNachname() {
 		return nachname;
