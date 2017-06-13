@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.Map;
 
 public class ShiftPlanCreator {
-	 private Mitarbeiter_old angemeldeterMitarbeiter;
+	 private Mitarbeiter angemeldeterMitarbeiter;
 	 private List<Schichtplan> schichtplaeneListe = new LinkedList<>();
 	 private Map<Station, List<Schichtplan>> schichtplaene = new HashMap<>();
 	
-	 public ShiftPlanCreator(Mitarbeiter_old mitarbeiter) {
+	 public ShiftPlanCreator(Mitarbeiter mitarbeiter) {
 		 this.angemeldeterMitarbeiter = mitarbeiter;
 	 }
 	 
-	 public Mitarbeiter_old getAngemeldetenMitarbeiter(){
+	 public Mitarbeiter getAngemeldetenMitarbeiter(){
 		return angemeldeterMitarbeiter;
 	}
 	 
@@ -32,15 +32,15 @@ public class ShiftPlanCreator {
 		 return null;
 	 }
 	
-	 public boolean erstelleSchichtplan(Station station, int jahr, Quartalszahl quartalszahl) throws Exception {
-		if (getAngemeldetenMitarbeiter().hatBerechtigung(Berechtigung.SCHICHTPLAN_ERSTELLEN)){
-			schichtplaeneListe.add(new Schichtplan(jahr, quartalszahl));
-			schichtplaene.put(station, schichtplaeneListe);
-			return true;
-		} else {
-			throw new Exception("Fehlende Berechtigung: " + getAngemeldetenMitarbeiter().getBeruf().getName());
-//			System.out.println("Falscher Beruf: " + angemeldeterMitarbeiter.getBeruf().getName());
-//			return false;
-		}
-	}
+//	 public boolean erstelleSchichtplan(Station station, int jahr, Quartalszahl quartalszahl) throws Exception {
+//		if (getAngemeldetenMitarbeiter().hatBerechtigung(Berechtigung.SCHICHTPLAN_ERSTELLEN)){
+//			schichtplaeneListe.add(new Schichtplan(jahr, quartalszahl));
+//			schichtplaene.put(station, schichtplaeneListe);
+//			return true;
+//		} else {
+//			throw new Exception("Fehlende Berechtigung: " + getAngemeldetenMitarbeiter().getBeruf().getName());
+////			System.out.println("Falscher Beruf: " + angemeldeterMitarbeiter.getBeruf().getName());
+////			return false;
+//		}
+//	}
 }

@@ -59,11 +59,16 @@ public class Mitarbeiter {
 	private GenehmigenSchichtplanBerechtigung genehmigenSchichtplanBerechtigung;
 	private AnzeigenLassenGesamtansichtBerechtigung anzeigenLassenGesamtansichtBerechtigung;
 	
-	public Mitarbeiter(String nachname, String vorname, Beruf beruf) {
+	public Mitarbeiter(String nachname, String vorname, Beruf beruf, String passwort) {
 		this.nachname = nachname;
 		this.vorname = vorname;
 		this.beruf = beruf;
-		
+		this.passwort = passwort;
+	}
+	
+	public Mitarbeiter(String nachname, String vorname, Beruf beruf, String passwort, Arbeitspensum arbeitspensum) {
+		this(nachname, vorname, beruf, passwort);
+		this.arbeitspensum = arbeitspensum;
 	}
 	
 	public void setStandartBerechtigungen() {

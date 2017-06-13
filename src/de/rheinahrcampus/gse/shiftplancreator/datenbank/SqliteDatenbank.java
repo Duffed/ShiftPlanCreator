@@ -6,18 +6,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AnlegenMitarbeiterBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AnzeigenLassenGesamtansichtBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AusdruckenSchichtplaeneStationBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AusdruckenSchichtplaeneStationenBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.BearbeitenMitarbeiterBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.BereitstellenSchichtplanBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.EinsehenSchichtplaeneStationBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.EinsehenSchichtplaeneStationenBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.ErstellenSchichtplanBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.FestlegenZeitspanneBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.GenehmigenSchichtplanBerechtigung;
-
 public class SqliteDatenbank {
 
     protected final Connection verbindung;
