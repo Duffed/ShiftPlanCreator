@@ -25,7 +25,7 @@ public class Schichtplan {
 		fuelleTage(jahr, quartalszahl);
 	}
 		
-	//Map wird gef�llt
+	//Map wird gefuellt
 	static {
 		START_DATUM = new HashMap<>();
 		START_DATUM.put(Quartalszahl.EINS, Month.JANUARY);
@@ -40,7 +40,7 @@ public class Schichtplan {
 		END_DATUM.put(Quartalszahl.VIER, Month.JANUARY);	
 	}	
 	
-	//Liste tageImQuartal kann als Iterable (nicht ver�nderbar) ausgegeben werden
+	//Liste tageImQuartal kann als Iterable (nicht veraenderbar) ausgegeben werden
 	public Iterable<Tag> getTage() {
 		return tage;
 	}
@@ -66,11 +66,11 @@ public class Schichtplan {
 		int startMonat = START_DATUM.get(quartalszahl).getValue();
 		int endMonat = END_DATUM.get(quartalszahl).getValue();
 		
-		//Wir bauen ein Datum f�r den Anfang und das Ende des Quartals
+		//Wir bauen ein Datum fuer den Anfang und das Ende des Quartals
 		LocalDate startDatum = LocalDate.of(jahr, startMonat, 1);
 		LocalDate endDatum = LocalDate.of(jahr, endMonat, 1);
 		
-		//In einer SChleife f�ge ich jeden Tag im Quartal zur Liste tageImQuartal hinzu
+		//In einer SChleife fuege ich jeden Tag im Quartal zur Liste tageImQuartal hinzu
 		while (!(startDatum.getMonth().equals(endDatum.getMonth()))){
 			tage.add(new Tag(this, startDatum));
 			

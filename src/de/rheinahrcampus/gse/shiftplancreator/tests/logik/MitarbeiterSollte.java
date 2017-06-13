@@ -1,4 +1,4 @@
-package de.rheinahrcampus.gse.shiftplancreator.tests;
+package de.rheinahrcampus.gse.shiftplancreator.tests.logik;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
