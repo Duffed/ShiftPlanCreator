@@ -17,4 +17,8 @@ public enum Arbeitspensum {
 		return prozentDezimal;
 	}
 
+	public int getProzentZahl(){
+		return (int)(prozentDezimal * 100);
+	}
+	
 }

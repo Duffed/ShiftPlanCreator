@@ -27,6 +27,7 @@ public enum Beruf {
 		return kuerzel;
 	}
 	
+	//Veraltet
 	public boolean hatBerechtigung(Berechtigung berechtigung) {
 		return berechtigungen.contains(berechtigung);
 	}
