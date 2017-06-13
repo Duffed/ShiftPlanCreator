@@ -1,18 +1,12 @@
 package de.rheinahrcampus.gse.shiftplancreator.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.ErstellenSchichtplanBerechtigung;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnlegenMitarbeiter;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStation;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BearbeitenMitarbeiter;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BereitstellenSchichtplan;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStation;
 import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.ErstellenSchichtplan;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.FestlegenZeitspanne;
-import de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.VeroeffentlichenSchichtplan;
 import de.rheinahrcampus.gse.shiftplancreator.logik.Arbeitspensum;
 import de.rheinahrcampus.gse.shiftplancreator.logik.Beruf;
 import de.rheinahrcampus.gse.shiftplancreator.logik.Mitarbeiter;
@@ -76,7 +70,9 @@ public class MitarbeiterSollte {
 	@Test
 	public void aendernVonBerechtigungenKoennen(){
 		Mitarbeiter ma = new Mitarbeiter("Nachname", "Vorname", Beruf.PFLEGEKRAFT, "123");
-//		assertEquals(ma.getErstellenSchichtplanBerechtigung())
+		assertFalse(ma.getErstellenSchichtplanBerechtigung().istBerechtigt());
+		ma.setErstellenSchichtplanBerechtigung(new ErstellenSchichtplan());
+		assertTrue(ma.getErstellenSchichtplanBerechtigung().istBerechtigt());
 	}
 	
 }
