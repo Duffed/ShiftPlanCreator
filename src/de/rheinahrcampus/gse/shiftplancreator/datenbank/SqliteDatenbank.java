@@ -1,7 +1,6 @@
 package de.rheinahrcampus.gse.shiftplancreator.datenbank;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -21,7 +20,7 @@ public class SqliteDatenbank {
             Class.forName("org.sqlite.JDBC");
 
             String heimatVerzeichnis = System.getProperty("user.home");
-            String datenbankPfad = Paths.get(heimatVerzeichnis, "Schichtplan2.sqlite").toString();
+            String datenbankPfad = Paths.get(heimatVerzeichnis, "Schichtplan.sqlite").toString();
             
             
             erstelleDatenbankFallsNichtVorhanden(datenbankPfad);

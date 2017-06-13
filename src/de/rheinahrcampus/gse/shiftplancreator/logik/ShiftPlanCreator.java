@@ -1,5 +1,5 @@
 package de.rheinahrcampus.gse.shiftplancreator.logik;
-
+//Veraltet
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;

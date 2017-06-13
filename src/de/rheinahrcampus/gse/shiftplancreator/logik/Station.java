@@ -30,7 +30,11 @@ public class Station {
 		this.schichtplaene.add(schichtplan);
 	}
 
-	public Iterable<Schichtplan> getSchichtplaene(){
+	public List<Mitarbeiter> getMitarbeiter(){
+		return mitarbeiter;
+	}
+	
+	public List<Schichtplan> getSchichtplaene(){
 		return schichtplaene;
 	}
 	
