@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.BereitstellenSchichtplanBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/BereitstellenSchichtplanBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="6160" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.VeroeffentlichenSchichtplanBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/VeroeffentlichenSchichtplanBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="346" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.EinsehenSchichtplaeneStationBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/EinsehenSchichtplaeneStationBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="273" x="6770" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AnzeigenLassenGesamtansichtBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/AnzeigenLassenGesamtansichtBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="280" x="4318" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.FestlegenZeitspanneBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/FestlegenZeitspanneBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="4929" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.GenehmigenSchichtplanBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/GenehmigenSchichtplanBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="2184" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="7" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AusdruckenSchichtplaeneStationBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/AusdruckenSchichtplaeneStationBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="290" x="5539" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="8" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.BearbeitenMitarbeiterBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/BearbeitenMitarbeiterBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="3426" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="9" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AnlegenMitarbeiterBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/AnlegenMitarbeiterBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="1574" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="10" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.AusdruckenSchichtplaeneStationenBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/AusdruckenSchichtplaeneStationenBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="304" x="2794" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="11" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.EinsehenSchichtplaeneStationenBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/EinsehenSchichtplaeneStationenBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="287" x="956" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="12" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.abstrakt.ErstellenSchichtplanBerechtigung" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/abstrakt/ErstellenSchichtplanBerechtigung.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="268" x="7380" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="13" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BearbeitenMitarbeiterVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/BearbeitenMitarbeiterVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="3124" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.VeroeffentlichenSchichtplanVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/VeroeffentlichenSchichtplanVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.ErstellenSchichtplanVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/ErstellenSchichtplanVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="7685" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BereitstellenSchichtplanVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/BereitstellenSchichtplanVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="6465" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.GenehmigenSchichtplan" project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/GenehmigenSchichtplan.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="1879" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.GenehmigenSchichtplanVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/GenehmigenSchichtplanVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="2184" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStation" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AusdruckenSchichtplaeneStation.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="5539" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnzeigenLassenGesamtansichtVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AnzeigenLassenGesamtansichtVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="266" x="4623" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AusdruckenSchichtplaeneStationVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="276" x="5844" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.FestlegenZeitspanne" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/FestlegenZeitspanne.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="4929" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/EinsehenSchichtplaeneStationVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="7075" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationenVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AusdruckenSchichtplaeneStationenVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="290" x="2794" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BereitstellenSchichtplan" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/BereitstellenSchichtplan.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="6160" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStation" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/EinsehenSchichtplaeneStation.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="6770" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnzeigenLassenGesamtansicht" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AnzeigenLassenGesamtansicht.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="4318" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnlegenMitarbeiter" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AnlegenMitarbeiter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="1574" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.VeroeffentlichenSchichtplan" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/VeroeffentlichenSchichtplan.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="346" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AnlegenMitarbeiterVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AnlegenMitarbeiterVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="1269" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.AusdruckenSchichtplaeneStationen" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/AusdruckenSchichtplaeneStationen.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="2489" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.BearbeitenMitarbeiter" project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/BearbeitenMitarbeiter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="3429" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.FestlegenZeitspanneVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/FestlegenZeitspanneVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="5234" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationenVerweigert" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/EinsehenSchichtplaeneStationenVerweigert.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="273" x="956" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.ErstellenSchichtplan" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/ErstellenSchichtplan.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="7380" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" 
+    name="de.rheinahrcampus.gse.shiftplancreator.berechtigung.konkret.EinsehenSchichtplaeneStationen" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/berechtigung/konkret/EinsehenSchichtplaeneStationen.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="265" x="651" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="de.rheinahrcampus.gse.shiftplancreator.logik.Mitarbeiter" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/logik/Mitarbeiter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="837" width="544" x="3734" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="38" language="java" name="de.rheinahrcampus.gse.shiftplancreator.logik.Arbeitspensum" 
+    project="ShiftPlanCreator" 
+    file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/logik/Arbeitspensum.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="197" x="3975" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="39" language="java" name="de.rheinahrcampus.gse.shiftplancreator.logik.Beruf" 
+    project="ShiftPlanCreator" file="/ShiftPlanCreator/src/de/rheinahrcampus/gse/shiftplancreator/logik/Beruf.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="201" x="3734" y="914"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <association id="40">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="41" name="anlegenMitarbeiterBerechtigung"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="43">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <realization id="44">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <association id="45">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="46" name="arbeitspensum"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="49" name="beruf"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="52" name="anzeigenLassenGesamtansichtBerechtigung"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="54">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <realization id="55">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="56">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="57">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="58">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="59">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="60" name="einsehenSchichtplaeneStationenBerechtigung"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="62">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="63">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="64">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="65" name="einsehenSchichtplaeneStationBerechtigung"/>      
+      <multiplicity id="66" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="67">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <association id="68">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="69" name="ausdruckenSchichtplaeneStationBerechtigung"/>      
+      <multiplicity id="70" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="72" name="veroeffentlichenSchichtplanBerechtigung"/>      
+      <multiplicity id="73" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="74">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="75">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="76" name="genehmigenSchichtplanBerechtigung"/>      
+      <multiplicity id="77" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="78">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="79">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="80" name="erstellenSchichtplanBerechtigung"/>      
+      <multiplicity id="81" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="82">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="83">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <realization id="84">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <association id="85">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="86" name="festlegenZeitspanneBerechtigung"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="89" name="ausdruckenSchichtplaeneStationenBerechtigung"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="91">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="92">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <realization id="93">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="94">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="95">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <realization id="96">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <realization id="97">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="98">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <realization id="99">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="100">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="101" name="bearbeitenMitarbeiterBerechtigung"/>      
+      <multiplicity id="102" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="103">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="104" name="bereitstellenSchichtplanBerechtigung"/>      
+      <multiplicity id="105" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

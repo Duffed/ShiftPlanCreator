@@ -26,4 +26,13 @@ public enum Beruf {
 		return name;
 	}
 	
+	public static Beruf ausKuerzel(String kuerzel) {
+		for(Beruf b : Beruf.values()) {
+			if(b.kuerzel.equals(kuerzel)) {
+				return b;
+			}
+		}
+		return null;
+	}
+	
 }
